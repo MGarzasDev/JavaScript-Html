@@ -1,0 +1,10 @@
+/* •	Si el dato es válido el texto y el color del borde será negro. */
+input:valid {
+  border-color: black;
+  color: black;
+}
+/* •	Si el dato no es válido el texto y el color del borde será rojo. */
+input:invalid {
+  border-color: red;
+  color: red;
+}

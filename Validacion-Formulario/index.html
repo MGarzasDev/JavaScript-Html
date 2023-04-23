@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form name="miformulario" id= "miformulario" >
+       <fieldset>
+           <legend>Datos del disco  </legend>   
+                <label for="nombre">Nombre del disco
+                    <input id="nombre" name="nombre" type="text" maxlength="20" required placeholder="Título del disco" size="30">
+                </label>
+                <br>    
+                <label for="Grupo">Grupo
+                    <input type="text" name="grupo" id="grupo" maxlength="20" required placeholder="Nombre del grupo o cantante" size="30">
+                </label>
+                <br>
+                <label for="anno">Año de publicación
+                    <input type="number" name="anno" id="anno" min="1900" max=2050 value="2000" >
+                </label>
+                <br>
+                <label for="tipoMusica">Tipo de música
+                    <input type="radio" name="tipoMusica" id="tipoMusica" value="Rock">Rock  
+                    <input type="radio" name="tipoMusica" id="tipoMusica" value="Pop">Pop
+                    <input type="radio" name="tipoMusica" id="tipoMusica" value="Punk">Punk
+                    <input type="radio" name="tipoMusica" id="tipoMusica" value="Indie">Indie 
+                    <input type="radio" name="tipoMusica" id="tipoMusica" value="Otro" checked>Otro        
+                </label>                
+                <br>
+                <label for="localizacion">Localización (número entre 1 y 20): 
+                    <input type="number" name="localizacion" id="localizacion" min=1 max=20>
+                </label>
+                <br>
+                <label for="prestado">Prestado
+                    <input type="radio" name="prestado" id="prestado" value=true>Sí
+                    <input type="radio" name="prestado" id="prestado" value=false checked>No
+                </label>
+                <br>
+                <input type="submit" name="guardar" id='guardar' value="Guardar"/>
+           </legend>     
+        </fieldset>
+   </form>
+    <button id="verDiscos">Ver Discoteca</button> 
+  <script src="app.js"></script>
+</body>
+
+</html>
